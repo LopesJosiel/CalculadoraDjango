@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
+    path('', include('Appcalculadora.urls')),
     path('admin/', admin.site.urls),
-    path('', include('Appcalculadora.urls'))
+    path('Appcalculadora', include('Appcalculadora.urls'))
 ]
